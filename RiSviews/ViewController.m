@@ -23,7 +23,7 @@
 
     [self.btn setTitle:@"abcde" forState:UIControlStateNormal];
     
-    [SVProgressHUD showWithStatus:@"Sora no kiseki  \n test trigger from GitHub "];
+    [SVProgressHUD showWithStatus:@"Sora no kiseki  \n test trigger from GitHub  \ again"];
 }
 
 
