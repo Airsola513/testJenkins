@@ -9,7 +9,7 @@
 #import "ViewController.h"
 #import "SVProgressHUD.h"
 
-
+//
 @interface ViewController ()
 @property (weak, nonatomic) IBOutlet UIButton *btn;
 
@@ -23,7 +23,7 @@
 
     [self.btn setTitle:@"abcde" forState:UIControlStateNormal];
     
-    [SVProgressHUD showWithStatus:@"Sora no kiseki"];
+    [SVProgressHUD showWithStatus:@"Sora no kiseki  \n test trigger from GitHub "];
 }
 
 
