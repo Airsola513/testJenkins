@@ -428,7 +428,7 @@
 				DEVELOPMENT_TEAM = EDN943C6C8;
 				INFOPLIST_FILE = RiSviews/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.chinaj.RiSviews.RiSviews;
+				PRODUCT_BUNDLE_IDENTIFIER = com.chinaj.RiSviews;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Debug;
@@ -440,7 +440,7 @@
 				DEVELOPMENT_TEAM = EDN943C6C8;
 				INFOPLIST_FILE = RiSviews/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.chinaj.RiSviews.RiSviews;
+				PRODUCT_BUNDLE_IDENTIFIER = com.chinaj.RiSviews;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Release;
@@ -514,6 +514,7 @@
 				FF74E2411D9F4F31003C3BCD /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		FF74E2421D9F4F31003C3BCD /* Build configuration list for PBXNativeTarget "RiSviewsTests" */ = {
 			isa = XCConfigurationList;
@@ -522,6 +523,7 @@
 				FF74E2441D9F4F31003C3BCD /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		FF74E2451D9F4F31003C3BCD /* Build configuration list for PBXNativeTarget "RiSviewsUITests" */ = {
 			isa = XCConfigurationList;
@@ -530,6 +532,7 @@
 				FF74E2471D9F4F31003C3BCD /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
