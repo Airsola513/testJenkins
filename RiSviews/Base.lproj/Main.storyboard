@@ -28,6 +28,9 @@
                             <constraint firstItem="EMo-ra-I9N" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="ss7-m3-kCv"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="btn" destination="EMo-ra-I9N" id="iZZ-8R-WSa"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
