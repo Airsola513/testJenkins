@@ -7,6 +7,8 @@
 //
 
 #import "ViewController.h"
+#import "SVProgressHUD.h"
+
 
 @interface ViewController ()
 @property (weak, nonatomic) IBOutlet UIButton *btn;
@@ -20,6 +22,8 @@
     // Do any additional setup after loading the view, typically from a nib.
 
     [self.btn setTitle:@"abcde" forState:UIControlStateNormal];
+    
+    [SVProgressHUD showWithStatus:@"Sora no kiseki"];
 }
 
 
