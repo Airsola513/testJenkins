@@ -9,8 +9,25 @@
 #import "ViewController.h"
 #import "SVProgressHUD.h"
 #import "MONBlock.h"
+#import "UIGestureRecognizer+Block.h"
 
-//
+
+
+#define STRINGIFY(S) #S
+#define DEFER_STRINGIFY(S) STRINGIFY(S)
+#define PRAGMA_MESSAGE(MSG) _Pragma(STRINGIFY(message(MSG)))
+//#define PRAGMA_MESSAGE(MSG) _Pragma(STRINGIFY(GCC error(MSG)))
+
+#define FORMATTED_MESSAGE(MSG) "[TODO-" DEFER_STRINGIFY(__COUNTER__) "] " MSG " \n" \
+DEFER_STRINGIFY(__FILE__) " line " \
+DEFER_STRINGIFY(__LINE__) " "
+
+#define KEYWORDIFY try {} @catch (...) {}
+#define TODO(MSG) KEYWORDIFY PRAGMA_MESSAGE(FORMATTED_MESSAGE(MSG))
+
+
+
+
 @interface ViewController ()
 @property (weak, nonatomic) IBOutlet UIButton *btn;
 @property (weak, nonatomic) IBOutlet UIImageView *imgView;
@@ -19,18 +36,69 @@
 
 @implementation ViewController
 
+
+#warning  need to  aa
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view, typically from a nib.
+    @TODO("there is some thing to nedd");
+    @TODO("there is some thing to nedd");
+    @TODO("there is some thing to nedd");
 
+    
+    
     [self.btn setTitle:@"abcde" forState:UIControlStateNormal];
     
-    [SVProgressHUD showWithStatus:@"Sora no kiseki  \n  CocoaPod get √ \n GitHub trigger"];
+//    [SVProgressHUD showWithStatus:@"Sora no kiseki  \n  CocoaPod get √ \n GitHub trigger"];
     
 //    [self groupSync4];
 //    [self groupSync3];
     [self backgroudThreadAddImag];
+    
+//    [self.imgView addGestureRecognizer:[]
+    
+    
+    [self addGesture];
+    
+    
+   if (true)
+       NSLog(@"%s",__func__);
+
+    
 }
+
+-(void)addGesture{
+    self.imgView.userInteractionEnabled= YES;
+    UITapGestureRecognizer *tap = [[UITapGestureRecognizer alloc] initWithTarget:self action:@selector(addGestureTarger)];
+    [self.imgView addGestureRecognizer:tap];
+    
+    // target 可以一对多   传递参数是trick
+    [self.btn addTarget:self action:@selector(addGestureTarger) forControlEvents:UIControlEventTouchUpInside];
+    [self.btn addTarget:self action:@selector(addGestureTarger2) forControlEvents:UIControlEventTouchUpInside];
+
+}
+
+-(void)addGesture2{
+    
+    self.imgView.userInteractionEnabled= YES;
+    [self.imgView addGestureRecognizer:[UITapGestureRecognizer sl_gestureRecognizerWithActionBlock:^(id gestureRecognizer) {
+        NSLog(@"%s",__func__);
+        
+    }]];
+    
+}
+
+-(void)addGestureTarger{
+    NSLog(@"%s",__func__);
+
+}
+
+-(void)addGestureTarger2{
+    NSLog(@"%s",__func__);
+    
+}
+
+
 
 
 - (void)didReceiveMemoryWarning {
@@ -57,9 +125,9 @@ dispatch_async(dispatch_get_global_queue(0, 0), ^{
 //        self.imgView.image = [UIImage imageNamed:@"0.png"];
 //
 //    });
-//    [self performSelectorOnMainThread:@selector(foo) withObject:self waitUntilDone:YES];
+    [self performSelectorOnMainThread:@selector(foo) withObject:self waitUntilDone:YES];
 
-    [self performSelector:@selector(foo)];
+//    [self performSelector:@selector(foo)];
 });
 
     
