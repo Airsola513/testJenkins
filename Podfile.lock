@@ -1,12 +1,28 @@
 PODS:
+  - AVOSCloud (3.4.4)
+  - SolaSpecs (0.0.1):
+    - SVProgressHUD
   - SVProgressHUD (2.0.3)
 
 DEPENDENCIES:
+  - AVOSCloud
+  - SolaSpecs (from `https://github.com/Airsola/SolaSpecs.git`)
   - SVProgressHUD (~> 2.0.3)
 
+EXTERNAL SOURCES:
+  SolaSpecs:
+    :git: https://github.com/Airsola/SolaSpecs.git
+
+CHECKOUT OPTIONS:
+  SolaSpecs:
+    :commit: 8e67cf2424d0f00650db2e0d7002efebaa9562f5
+    :git: https://github.com/Airsola/SolaSpecs.git
+
 SPEC CHECKSUMS:
+  AVOSCloud: 50a81ba9fe043750592355d13589b108771f3724
+  SolaSpecs: ccce0a2fe5a8477a9810d697b20a90d6b2205264
   SVProgressHUD: b0830714205bea1317ea1a2ebc71e5633af334d4
 
-PODFILE CHECKSUM: fcdea7ef88d45f8eaa1f18141a2df14513e1ac17
+PODFILE CHECKSUM: 37708d164ce3344ad0e7a0dfa6900f96ff3cc2cc
 
 COCOAPODS: 1.0.1

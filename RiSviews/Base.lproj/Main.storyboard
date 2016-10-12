@@ -3,6 +3,7 @@
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11161"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
@@ -21,15 +22,24 @@
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="EMo-ra-I9N">
                                 <state key="normal" title="Button"/>
                             </button>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="aip-dO-Erl">
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="128" id="Z6q-dM-xqw"/>
+                                </constraints>
+                            </imageView>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
+                            <constraint firstItem="aip-dO-Erl" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="93" id="EVd-8X-5LV"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="aip-dO-Erl" secondAttribute="trailing" constant="52" id="MnN-Vt-B8b"/>
+                            <constraint firstItem="aip-dO-Erl" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="51" id="kNC-Px-w0x"/>
                             <constraint firstItem="EMo-ra-I9N" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="r7y-Zd-56g"/>
                             <constraint firstItem="EMo-ra-I9N" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="ss7-m3-kCv"/>
                         </constraints>
                     </view>
                     <connections>
                         <outlet property="btn" destination="EMo-ra-I9N" id="iZZ-8R-WSa"/>
+                        <outlet property="imgView" destination="aip-dO-Erl" id="kDY-qH-uZv"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
