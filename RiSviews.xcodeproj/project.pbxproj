@@ -19,6 +19,7 @@
 		FF74E2251D9F4F31003C3BCD /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FF74E2231D9F4F31003C3BCD /* LaunchScreen.storyboard */; };
 		FF74E2301D9F4F31003C3BCD /* RiSviewsTests.m in Sources */ = {isa = PBXBuildFile; fileRef = FF74E22F1D9F4F31003C3BCD /* RiSviewsTests.m */; };
 		FF74E23B1D9F4F31003C3BCD /* RiSviewsUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = FF74E23A1D9F4F31003C3BCD /* RiSviewsUITests.m */; };
+		FF9D218F1DADCE790022E773 /* UIGestureRecognizer+Block.m in Sources */ = {isa = PBXBuildFile; fileRef = FF9D218E1DADCE790022E773 /* UIGestureRecognizer+Block.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -63,6 +64,8 @@
 		FF74E2361D9F4F31003C3BCD /* RiSviewsUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = RiSviewsUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		FF74E23A1D9F4F31003C3BCD /* RiSviewsUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RiSviewsUITests.m; sourceTree = "<group>"; };
 		FF74E23C1D9F4F31003C3BCD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FF9D218D1DADCE790022E773 /* UIGestureRecognizer+Block.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIGestureRecognizer+Block.h"; sourceTree = "<group>"; };
+		FF9D218E1DADCE790022E773 /* UIGestureRecognizer+Block.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIGestureRecognizer+Block.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -141,6 +144,8 @@
 				FF59D00D1DACDE15004E423B /* MONBlock.m */,
 				FF59CFFF1DACB3FF004E423B /* VMUIKitMainThreadGuard.h */,
 				FF59D0001DACB3FF004E423B /* VMUIKitMainThreadGuard.m */,
+				FF9D218D1DADCE790022E773 /* UIGestureRecognizer+Block.h */,
+				FF9D218E1DADCE790022E773 /* UIGestureRecognizer+Block.m */,
 				FF74E21E1D9F4F31003C3BCD /* Main.storyboard */,
 				FF74E2211D9F4F31003C3BCD /* Assets.xcassets */,
 				FF74E2231D9F4F31003C3BCD /* LaunchScreen.storyboard */,
@@ -370,6 +375,7 @@
 				FF74E21A1D9F4F31003C3BCD /* AppDelegate.m in Sources */,
 				FF74E2171D9F4F31003C3BCD /* main.m in Sources */,
 				FF59D0011DACB3FF004E423B /* VMUIKitMainThreadGuard.m in Sources */,
+				FF9D218F1DADCE790022E773 /* UIGestureRecognizer+Block.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
