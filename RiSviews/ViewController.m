@@ -108,15 +108,15 @@
 
     dispatch_async(dispatch_get_global_queue(0, 0), ^{
 
-        // [MONBlock performBlock:^{
-        //     self.imgView.image = [UIImage imageNamed:@"0.png"];
-        //
-        // } afterDelay:0];
+        [MONBlock performBlock:^{
+            self.imgView.image = [UIImage imageNamed:@"0.png"];
 
-        //    dispatch_async(dispatch_get_main_queue(), ^{
-        //        self.imgView.image = [UIImage imageNamed:@"0.png"];
-        //
-        //    });
+        } afterDelay:0];
+
+        dispatch_async(dispatch_get_main_queue(), ^{
+            self.imgView.image = [UIImage imageNamed:@"0.png"];
+
+        });
         [self performSelectorOnMainThread:@selector(foo) withObject:self waitUntilDone:YES];
 
         //    [self performSelector:@selector(foo)];
