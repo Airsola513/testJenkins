@@ -8,9 +8,10 @@
 
 #import <Foundation/Foundation.h>
 
+
 @interface MONBlock : NSObject
 
-+ (void)performBlock:(void(^)())pBlock afterDelay:(NSTimeInterval)pDelay;
++ (void)performBlock:(void (^)())pBlock afterDelay:(NSTimeInterval)pDelay;
 
 
 @end
