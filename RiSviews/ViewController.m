@@ -60,7 +60,7 @@
     [self addGesture];
 
 
-    if (true)NSLog(@"%s", __func__);
+    if (true) NSLog(@"%s", __func__);
 }
 
 - (void)addGesture
