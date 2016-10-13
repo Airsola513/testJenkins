@@ -11,7 +11,7 @@
 #import "MONBlock.h"
 #import "UIGestureRecognizer+Block.h"
 #import "AFNetworking.h"
-
+#import "UIView+ExtendTouchRect.h"
 
 #define STRINGIFY(S) #S
 #define DEFER_STRINGIFY(S) STRINGIFY(S)
@@ -80,8 +80,20 @@
 
     if (true) NSLog(@"%s", __func__);
 
+    //    [self testAFN];
+    [self testBigButton];
+}
 
-    [self testAFN];
+
+- (void)testBigButton
+{
+    NSLog(@"%s", __func__);
+    [self.btn addTarget:self action:@selector(addGestureTarger) forControlEvents:UIControlEventTouchUpInside];
+    [self.btn addTarget:self action:@selector(addGestureTarger2) forControlEvents:UIControlEventTouchUpInside];
+
+    self.btn.touchExtendInset = UIEdgeInsetsMake(-50, -50, -50, -50);
+
+    //   [self.btn ex]
 }
 
 
@@ -109,11 +121,8 @@
     self.imgView.userInteractionEnabled = YES;
     UITapGestureRecognizer *tap = [[UITapGestureRecognizer alloc] initWithTarget:self action:@selector(addGestureTarger)];
     [self.imgView addGestureRecognizer:tap];
-
-    // target 可以一对多   传递参数是trick
-    [self.btn addTarget:self action:@selector(addGestureTarger) forControlEvents:UIControlEventTouchUpInside];
-    [self.btn addTarget:self action:@selector(addGestureTarger2) forControlEvents:UIControlEventTouchUpInside];
 }
+
 
 - (void)addGesture2
 {

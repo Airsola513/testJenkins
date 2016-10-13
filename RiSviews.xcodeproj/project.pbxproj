@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		43519F8A204CCD874D484662 /* libPods-RiSviews.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 430D711E58D3BDB95C4261E3 /* libPods-RiSviews.a */; };
+		FF1D017A1DAF8B56003D9F5E /* UIView+ExtendTouchRect.m in Sources */ = {isa = PBXBuildFile; fileRef = FF1D01791DAF8B56003D9F5E /* UIView+ExtendTouchRect.m */; };
 		FF59D0011DACB3FF004E423B /* VMUIKitMainThreadGuard.m in Sources */ = {isa = PBXBuildFile; fileRef = FF59D0001DACB3FF004E423B /* VMUIKitMainThreadGuard.m */; };
 		FF59D0051DACB6C6004E423B /* 0.png in Resources */ = {isa = PBXBuildFile; fileRef = FF59D0041DACB6C6004E423B /* 0.png */; };
 		FF59D00E1DACDE15004E423B /* MONBlock.m in Sources */ = {isa = PBXBuildFile; fileRef = FF59D00D1DACDE15004E423B /* MONBlock.m */; };
@@ -43,6 +44,8 @@
 		430D711E58D3BDB95C4261E3 /* libPods-RiSviews.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-RiSviews.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		B895334CDDACE9835D8BB242 /* Pods-RiSviews.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RiSviews.debug.xcconfig"; path = "Pods/Target Support Files/Pods-RiSviews/Pods-RiSviews.debug.xcconfig"; sourceTree = "<group>"; };
 		DA5B16D683A06AB445EF84A7 /* Pods-RiSviews.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RiSviews.release.xcconfig"; path = "Pods/Target Support Files/Pods-RiSviews/Pods-RiSviews.release.xcconfig"; sourceTree = "<group>"; };
+		FF1D01781DAF8B56003D9F5E /* UIView+ExtendTouchRect.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+ExtendTouchRect.h"; sourceTree = "<group>"; };
+		FF1D01791DAF8B56003D9F5E /* UIView+ExtendTouchRect.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+ExtendTouchRect.m"; sourceTree = "<group>"; };
 		FF59CFFF1DACB3FF004E423B /* VMUIKitMainThreadGuard.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VMUIKitMainThreadGuard.h; sourceTree = "<group>"; };
 		FF59D0001DACB3FF004E423B /* VMUIKitMainThreadGuard.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VMUIKitMainThreadGuard.m; sourceTree = "<group>"; };
 		FF59D0041DACB6C6004E423B /* 0.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 0.png; sourceTree = "<group>"; };
@@ -140,6 +143,8 @@
 				FF74E2191D9F4F31003C3BCD /* AppDelegate.m */,
 				FF74E21B1D9F4F31003C3BCD /* ViewController.h */,
 				FF74E21C1D9F4F31003C3BCD /* ViewController.m */,
+				FF1D01781DAF8B56003D9F5E /* UIView+ExtendTouchRect.h */,
+				FF1D01791DAF8B56003D9F5E /* UIView+ExtendTouchRect.m */,
 				FF59D00C1DACDE15004E423B /* MONBlock.h */,
 				FF59D00D1DACDE15004E423B /* MONBlock.m */,
 				FF59CFFF1DACB3FF004E423B /* VMUIKitMainThreadGuard.h */,
@@ -375,6 +380,7 @@
 				FF74E21A1D9F4F31003C3BCD /* AppDelegate.m in Sources */,
 				FF74E2171D9F4F31003C3BCD /* main.m in Sources */,
 				FF59D0011DACB3FF004E423B /* VMUIKitMainThreadGuard.m in Sources */,
+				FF1D017A1DAF8B56003D9F5E /* UIView+ExtendTouchRect.m in Sources */,
 				FF9D218F1DADCE790022E773 /* UIGestureRecognizer+Block.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
