@@ -10,6 +10,7 @@
 #import "SVProgressHUD.h"
 #import "MONBlock.h"
 #import "UIGestureRecognizer+Block.h"
+#import "AFNetworking.h"
 
 
 #define STRINGIFY(S) #S
@@ -30,6 +31,8 @@
 @property (weak, nonatomic) IBOutlet UIButton *btn;
 @property (weak, nonatomic) IBOutlet UIImageView *imgView;
 
+@property (nonatomic, strong) UIView *view;
+
 @end
 
 
@@ -40,6 +43,21 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
+
+
+    if (true) NSLog(@"%s", __func__);
+
+    dispatch_async(dispatch_get_global_queue(0, 0), ^() {
+        sleep(5);
+        NSLog(@"任务一完成");
+        dispatch_async(dispatch_get_main_queue(), ^{
+            NSLog(@"%s", __func__);
+
+        });
+
+    });
+
+
     // Do any additional setup after loading the view, typically from a nib.
     @TODO("there is some thing to nedd");
     @TODO("there is some thing to nedd");
@@ -52,16 +70,39 @@
 
     //    [self groupSync4];
     //    [self groupSync3];
-    [self backgroudThreadAddImag];
+    //    [self backgroudThreadAddImag];
 
     //    [self.imgView addGestureRecognizer:[]
 
 
-    [self addGesture];
+    //    [self addGesture];
 
 
     if (true) NSLog(@"%s", __func__);
+
+
+    [self testAFN];
 }
+
+
+- (void)testAFN
+{
+    AFHTTPSessionManager *manager = [AFHTTPSessionManager manager];
+    manager.completionQueue = dispatch_queue_create("io.dazuo.github.request.session.completion.queue", DISPATCH_QUEUE_CONCURRENT);
+
+    [manager POST:[NSString stringWithFormat:@"http://itunes.apple.com/lookup?id=%@", @"1057507454"] parameters:nil
+        progress:nil
+        success:^(NSURLSessionTask *_Nonnull operation, id _Nonnull responseObject) {
+            NSArray *array = responseObject[@"results"];
+            NSDictionary *dict = [array lastObject];
+            NSString *currentAppSxxxxtoreVersion = dict[@"version"];
+
+
+        }
+        failure:^(NSURLSessionTask *_Nullable operation, NSError *_Nonnull error){
+        }];
+}
+
 
 - (void)addGesture
 {
@@ -110,15 +151,14 @@
 
         [MONBlock performBlock:^{
             self.imgView.image = [UIImage imageNamed:@"0.png"];
-
         } afterDelay:0];
 
         dispatch_async(dispatch_get_main_queue(), ^{
             self.imgView.image = [UIImage imageNamed:@"0.png"];
 
         });
-        [self performSelectorOnMainThread:@selector(foo) withObject:self waitUntilDone:YES];
 
+        [self performSelectorOnMainThread:@selector(foo) withObject:self waitUntilDone:YES];
         //    [self performSelector:@selector(foo)];
     });
 }

@@ -1,10 +1,26 @@
 PODS:
+  - AFNetworking (3.1.0):
+    - AFNetworking/NSURLSession (= 3.1.0)
+    - AFNetworking/Reachability (= 3.1.0)
+    - AFNetworking/Security (= 3.1.0)
+    - AFNetworking/Serialization (= 3.1.0)
+    - AFNetworking/UIKit (= 3.1.0)
+  - AFNetworking/NSURLSession (3.1.0):
+    - AFNetworking/Reachability
+    - AFNetworking/Security
+    - AFNetworking/Serialization
+  - AFNetworking/Reachability (3.1.0)
+  - AFNetworking/Security (3.1.0)
+  - AFNetworking/Serialization (3.1.0)
+  - AFNetworking/UIKit (3.1.0):
+    - AFNetworking/NSURLSession
   - AVOSCloud (3.4.4)
   - SolaSpecs (0.0.1):
     - SVProgressHUD
   - SVProgressHUD (2.0.3)
 
 DEPENDENCIES:
+  - AFNetworking (~> 3.1.0)
   - AVOSCloud
   - SolaSpecs (from `https://github.com/Airsola/SolaSpecs.git`)
   - SVProgressHUD (~> 2.0.3)
@@ -19,10 +35,11 @@ CHECKOUT OPTIONS:
     :git: https://github.com/Airsola/SolaSpecs.git
 
 SPEC CHECKSUMS:
+  AFNetworking: 5e0e199f73d8626b11e79750991f5d173d1f8b67
   AVOSCloud: 50a81ba9fe043750592355d13589b108771f3724
   SolaSpecs: ccce0a2fe5a8477a9810d697b20a90d6b2205264
   SVProgressHUD: b0830714205bea1317ea1a2ebc71e5633af334d4
 
-PODFILE CHECKSUM: 37708d164ce3344ad0e7a0dfa6900f96ff3cc2cc
+PODFILE CHECKSUM: 5532138761dec2b635008bc00c759f1e1ac8d3f1
 
 COCOAPODS: 1.0.1
