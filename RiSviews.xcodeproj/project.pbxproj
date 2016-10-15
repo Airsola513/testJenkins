@@ -21,6 +21,9 @@
 		FF74E2301D9F4F31003C3BCD /* RiSviewsTests.m in Sources */ = {isa = PBXBuildFile; fileRef = FF74E22F1D9F4F31003C3BCD /* RiSviewsTests.m */; };
 		FF74E23B1D9F4F31003C3BCD /* RiSviewsUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = FF74E23A1D9F4F31003C3BCD /* RiSviewsUITests.m */; };
 		FF9D218F1DADCE790022E773 /* UIGestureRecognizer+Block.m in Sources */ = {isa = PBXBuildFile; fileRef = FF9D218E1DADCE790022E773 /* UIGestureRecognizer+Block.m */; };
+		FFABF8EC1DB0AD9100CB76CF /* AnotherTest.m in Sources */ = {isa = PBXBuildFile; fileRef = FFABF8EB1DB0AD9100CB76CF /* AnotherTest.m */; };
+		FFABF8EF1DB0BD5800CB76CF /* VVStack.m in Sources */ = {isa = PBXBuildFile; fileRef = FFABF8EE1DB0BD5800CB76CF /* VVStack.m */; };
+		FFDB94671DB0E15800404E29 /* abSpec.m in Sources */ = {isa = PBXBuildFile; fileRef = FFDB94661DB0E15800404E29 /* abSpec.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -69,6 +72,10 @@
 		FF74E23C1D9F4F31003C3BCD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		FF9D218D1DADCE790022E773 /* UIGestureRecognizer+Block.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIGestureRecognizer+Block.h"; sourceTree = "<group>"; };
 		FF9D218E1DADCE790022E773 /* UIGestureRecognizer+Block.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIGestureRecognizer+Block.m"; sourceTree = "<group>"; };
+		FFABF8EB1DB0AD9100CB76CF /* AnotherTest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AnotherTest.m; sourceTree = "<group>"; };
+		FFABF8ED1DB0BD5800CB76CF /* VVStack.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VVStack.h; sourceTree = "<group>"; };
+		FFABF8EE1DB0BD5800CB76CF /* VVStack.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VVStack.m; sourceTree = "<group>"; };
+		FFDB94661DB0E15800404E29 /* abSpec.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = abSpec.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -143,6 +150,8 @@
 				FF74E2191D9F4F31003C3BCD /* AppDelegate.m */,
 				FF74E21B1D9F4F31003C3BCD /* ViewController.h */,
 				FF74E21C1D9F4F31003C3BCD /* ViewController.m */,
+				FFABF8ED1DB0BD5800CB76CF /* VVStack.h */,
+				FFABF8EE1DB0BD5800CB76CF /* VVStack.m */,
 				FF1D01781DAF8B56003D9F5E /* UIView+ExtendTouchRect.h */,
 				FF1D01791DAF8B56003D9F5E /* UIView+ExtendTouchRect.m */,
 				FF59D00C1DACDE15004E423B /* MONBlock.h */,
@@ -173,6 +182,8 @@
 			isa = PBXGroup;
 			children = (
 				FF74E22F1D9F4F31003C3BCD /* RiSviewsTests.m */,
+				FFABF8EB1DB0AD9100CB76CF /* AnotherTest.m */,
+				FFDB94661DB0E15800404E29 /* abSpec.m */,
 				FF74E2311D9F4F31003C3BCD /* Info.plist */,
 			);
 			path = RiSviewsTests;
@@ -381,6 +392,8 @@
 				FF74E2171D9F4F31003C3BCD /* main.m in Sources */,
 				FF59D0011DACB3FF004E423B /* VMUIKitMainThreadGuard.m in Sources */,
 				FF1D017A1DAF8B56003D9F5E /* UIView+ExtendTouchRect.m in Sources */,
+				FFDB94671DB0E15800404E29 /* abSpec.m in Sources */,
+				FFABF8EF1DB0BD5800CB76CF /* VVStack.m in Sources */,
 				FF9D218F1DADCE790022E773 /* UIGestureRecognizer+Block.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -390,6 +403,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				FF74E2301D9F4F31003C3BCD /* RiSviewsTests.m in Sources */,
+				FFABF8EC1DB0AD9100CB76CF /* AnotherTest.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

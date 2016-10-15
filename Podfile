@@ -7,4 +7,5 @@ pod 'SVProgressHUD', '~> 2.0.3'
 pod 'AVOSCloud'               # 数据存储、短信、云引擎调用等基础服务模块
 pod 'SolaSpecs',:git => 'https://github.com/Airsola/SolaSpecs.git'
 pod 'AFNetworking', '~> 3.1.0'
+pod 'Kiwi'
 end
