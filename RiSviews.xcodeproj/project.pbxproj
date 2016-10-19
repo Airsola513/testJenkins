@@ -546,6 +546,39 @@
 				DEVELOPMENT_TEAM = EDN943C6C8;
 				INFOPLIST_FILE = RiSviews/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				OTHER_LDFLAGS = (
+					"$(inherited)",
+					"-ObjC",
+					"-l\"AFNetworking\"",
+					"-l\"AVOSCloud\"",
+					"-l\"Kiwi\"",
+					"-l\"SVProgressHUD\"",
+					"-l\"SolaSpecs\"",
+					"-l\"icucore\"",
+					"-l\"sqlite3\"",
+					"-l\"z\"",
+					"-framework",
+					"\"CFNetwork\"",
+					"-framework",
+					"\"CoreGraphics\"",
+					"-framework",
+					"\"CoreLocation\"",
+					"-framework",
+					"\"CoreTelephony\"",
+					"-framework",
+					"\"Foundation\"",
+					"-framework",
+					"\"MobileCoreServices\"",
+					"-framework",
+					"\"QuartzCore\"",
+					"-framework",
+					"\"Security\"",
+					"-framework",
+					"\"SystemConfiguration\"",
+					"-framework",
+					"\"UIKit\"",
+					"-framework",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.chinaj.RiSviews;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
@@ -559,6 +592,39 @@
 				DEVELOPMENT_TEAM = EDN943C6C8;
 				INFOPLIST_FILE = RiSviews/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				OTHER_LDFLAGS = (
+					"$(inherited)",
+					"-ObjC",
+					"-l\"AFNetworking\"",
+					"-l\"AVOSCloud\"",
+					"-l\"Kiwi\"",
+					"-l\"SVProgressHUD\"",
+					"-l\"SolaSpecs\"",
+					"-l\"icucore\"",
+					"-l\"sqlite3\"",
+					"-l\"z\"",
+					"-framework",
+					"\"CFNetwork\"",
+					"-framework",
+					"\"CoreGraphics\"",
+					"-framework",
+					"\"CoreLocation\"",
+					"-framework",
+					"\"CoreTelephony\"",
+					"-framework",
+					"\"Foundation\"",
+					"-framework",
+					"\"MobileCoreServices\"",
+					"-framework",
+					"\"QuartzCore\"",
+					"-framework",
+					"\"Security\"",
+					"-framework",
+					"\"SystemConfiguration\"",
+					"-framework",
+					"\"UIKit\"",
+					"-framework",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.chinaj.RiSviews;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};

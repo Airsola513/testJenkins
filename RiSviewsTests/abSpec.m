@@ -81,6 +81,16 @@ context(@"when new created and pushed 4.6", ^{
         [stack pop];
         [[stack should] beEmpty];
     });
+
+    it(@"should raise a exception when pop", ^{
+        [[theBlock(^{
+            [stack pop];
+            [stack pop];
+
+        }) should] raiseWithName:@"VVStackPopEmptyException"];
+    });
+
+
 });
 
 

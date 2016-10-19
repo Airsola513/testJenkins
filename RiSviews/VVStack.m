@@ -36,19 +36,27 @@
     return [[self.numbers lastObject] doubleValue];
 }
 
-- (NSUInteger)count1
+- (NSUInteger)count
 {
     return [self.numbers count];
     //    return 1;
 }
 
-
 - (double)pop
 {
+    if ([self count] == 0) {
+        [NSException raise:@"VVStackPopEmptyException" format:@"Can not pop an empty stack."];
+    }
     double result = [self top];
     [self.numbers removeLastObject];
     return result;
 }
 
+
+- (void)noneCoberage
+{
+    //  no cover
+    NSLog(@"%s", __func__);
+}
 
 @end

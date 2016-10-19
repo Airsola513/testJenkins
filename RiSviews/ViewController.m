@@ -47,15 +47,15 @@
 
     if (true) NSLog(@"%s", __func__);
 
-    dispatch_async(dispatch_get_global_queue(0, 0), ^() {
-        sleep(5);
-        NSLog(@"任务一完成");
-        dispatch_async(dispatch_get_main_queue(), ^{
-            NSLog(@"%s", __func__);
-
-        });
-
-    });
+    //    dispatch_async(dispatch_get_global_queue(0, 0), ^() {
+    //        sleep(5);
+    //        NSLog(@"任务一完成");
+    //        dispatch_async(dispatch_get_main_queue(), ^{
+    //            NSLog(@"%s", __func__);
+    //
+    //        });
+    //
+    //    });
 
 
     // Do any additional setup after loading the view, typically from a nib.
@@ -64,12 +64,12 @@
     @TODO("there is some thing to nedd");
 
 
-    [self.btn setTitle:@"abcde" forState:UIControlStateNormal];
+    //    [self.btn setTitle:@"abcde" forState:UIControlStateNormal];
 
     //    [SVProgressHUD showWithStatus:@"Sora no kiseki  \n  CocoaPod get √ \n GitHub trigger"];
 
-    //    [self groupSync4];
-    //    [self groupSync3];
+    //        [self groupSync4];
+    [self groupSync3];
     //    [self backgroudThreadAddImag];
 
     //    [self.imgView addGestureRecognizer:[]
@@ -81,7 +81,7 @@
     if (true) NSLog(@"%s", __func__);
 
     //    [self testAFN];
-    [self testBigButton];
+    //    [self testBigButton];
 }
 
 // 技术实力很强
@@ -260,11 +260,14 @@
     });
 }
 
+
+//  类似于链式形式访问
 - (void)groupSync4
 {
     dispatch_queue_t dispatchQueue = dispatch_queue_create("com.shidaiyinuo.NetWorkStudy1", DISPATCH_QUEUE_CONCURRENT);
     dispatch_queue_t globalQueue = dispatch_get_global_queue(0, 0);
     dispatch_group_t dispatchGroup = dispatch_group_create();
+
     dispatch_group_async(dispatchGroup, dispatchQueue, ^() {
 
 
